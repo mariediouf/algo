@@ -6,7 +6,7 @@ BEGIN
  Write("saisir une phrase")
  Read(phrase)
  Nombre_caractere = phrase.length
- Write("Le Nombre_caractere est ",Nombre_caractere)
+ Write("Le nombre de caractere est ",Nombre_caractere)
  FOR i FROM 0 TO phrase.length  STEP 1  DO
  IF (phrase[i] === " ") THEN
   Nombre_mot = Nombre_mot + 1
