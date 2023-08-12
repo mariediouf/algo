@@ -5,22 +5,16 @@ VAR
 BEGIN
  Write("saisir une phrase")
  Read(phrase)
- Write("ecrire le nombre de caractere")
- Read(Nombre_caractere)
  Nombre_caractere = phrase.length
  Write("Le Nombre_caractere est ",Nombre_caractere)
- Write("ecrire le nombre de mot")
- Read(Nombre_mot)
  FOR i FROM 0 TO phrase.length  STEP 1  DO
  IF (phrase[i] === " ") THEN
   Nombre_mot = Nombre_mot + 1
  END_IF
  END_FOR
  Write("Le nombre de mot est",Nombre_mot)
- Write("ecrire le nombre de voyelle")
- Read(Nombre_voyelle)
  FOR i FROM 0 TO phrase.length STEP 1  DO
- IF ((phrase[i] === "o") || (phrase[i] === "a") || (phrase[i] === "i") || (phrase[i] === "u") || (phrase[i] === "e") || (phrase[i] === "y") ||) THEN
+ IF ((phrase[i] === "o") || (phrase[i] === "a") || (phrase[i] === "i") || (phrase[i] === "u") || (phrase[i] === "e") || (phrase[i] === "y")) THEN
   Nombre_voyelle = Nombre_voyelle + 1
  END_IF
  END_FOR
